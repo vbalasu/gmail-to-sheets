@@ -17,5 +17,6 @@ The script will create a new row in your sheet for each unread email, with the f
 - Column B: Sender
 - Column C: Subject
 - Column D: Email body
+- Column E: Sender Domain (Derived from sender)
 
 Note: By default, the script will keep emails unread. 
