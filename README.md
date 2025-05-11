@@ -18,4 +18,4 @@ The script will create a new row in your sheet for each unread email, with the f
 - Column C: Subject
 - Column D: Email body
 
-Note: By default, the script will keep emails unread. If you want to mark emails as read after processing, you can uncomment the message.markRead() line.
+Note: By default, the script will keep emails unread. 
