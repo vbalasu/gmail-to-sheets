@@ -6,7 +6,8 @@ function processUnreadEmails() {
   // Get all unread emails
   const threads = GmailApp.search('is:unread category:primary');
   sheet.clear();
-  sheet.appendRow(['date','sender','subject','body', 'senderDomain']);
+  sheet.appendRow(['index', 'date','sender','subject','body', 'senderDomain']);
+  let index = 0;
   
   // Process each email thread
   threads.forEach(thread => {
@@ -22,7 +23,8 @@ function processUnreadEmails() {
       senderDomain = extractDomain(sender);
       
       // Add data to sheet
-      sheet.appendRow([date,sender,subject,body, senderDomain]);
+      sheet.appendRow([index, date,sender,subject,body, senderDomain]);
+      index = index + 1;
     });
   });
 }
